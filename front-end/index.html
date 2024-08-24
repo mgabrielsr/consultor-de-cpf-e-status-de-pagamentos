@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Status Por CPF</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Consulta de Status por CPF</h2>
+        <form id="consultaForm">
+            <div class="form-group">
+                <label for="cpfInput">CPF</label>
+                <input type="text" id="cpfInput" placeholder="Digite CPF" required>
+            </div>
+            <button type="submit" class="btn-consultar">Consultar</button>
+        </form>
+        <div id="resultado">
+            <label>Status: <span id="statusLabel"></span></label>
+            <p id="paymentDate"></p>
+            <p id="paymentMethod"></p>
+        </div>
+        <div class="spinner" id="spinner">
+            <div class="spinner-icon"></div>
+            <span>Pesquisando...</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
